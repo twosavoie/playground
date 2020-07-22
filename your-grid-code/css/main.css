@@ -1,0 +1,78 @@
+/* https://cssgrid-generator.netlify.com */
+
+/* .parent {
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+.div1 { padding: 25px; background: red; grid-area: 1 / 1 / 2 / 2; }
+.div2 { padding: 25px; background: pink; grid-area: 1 / 2 / 2 / 3; }
+.div3 { padding: 25px; background: blue; grid-area: 1 / 3 / 2 / 4; }
+.div4 { padding: 25px; background: silver; grid-area: 1 / 4 / 2 / 5; }
+.div5 { padding: 25px; background: green; grid-area: 1 / 5 / 2 / 6; }
+.div6 { padding: 25px; background: purple; grid-area: 2 / 1 / 3 / 2; }
+.div7 { padding: 25px; background: aqua; grid-area: 2 / 2 / 3 / 3; }
+.div8 { padding: 25px; background: lightblue; grid-area: 2 / 3 / 3 / 4; }
+.div9 { padding: 25px; background: grey; grid-area: 2 / 4 / 3 / 5; }
+.div10 { padding: 25px; background: coral; grid-area: 2 / 5 / 3 / 6; } */
+
+.parent {
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+ .div1 {
+  padding: 25px;
+  background: rgba(193, 66, 66, 0.3);
+  grid-area: 1 / 1 / 3 / 3;
+}
+.div2 {
+  padding: 25px;
+  background: rgba(63, 191, 63, 0.3);
+  grid-area: 2 / 2 / 4 / 5;
+}
+.div3 {
+  padding: 25px;
+  background: rgba(191, 127, 63, 0.3);
+  grid-area: 1 / 2 / 2 / 6;
+}
+.div4 {
+  padding: 25px;
+  background: rgba(191, 191, 63, 0.3);
+  grid-area: 2 / 4 / 6 / 6;
+}
+.div5 {
+  padding: 25px;
+  background: rgba(63, 63, 191, 0.3);
+  grid-area: 3 / 1 / 6 / 4;
+}
+
+/* .div1 {
+  padding: 25px;
+  background: rgba(63, 63, 191, 0.3);
+  grid-area: 1 / 1 / 3 / 3;
+}
+.div2 {
+  padding: 25px;
+  background: rgba(63, 63, 191, 0.3);
+  grid-area: 2 / 2 / 4 / 5;
+}
+.div3 {
+  padding: 25px;
+  background: rgba(63, 63, 191, 0.3);
+  grid-area: 1 / 2 / 2 / 6;
+}
+.div4 {
+  padding: 25px;
+  background: rgba(63, 63, 191, 0.3);
+  grid-area: 2 / 4 / 6 / 6;
+}
+.div5 {
+  padding: 25px;
+  background: rgba(63, 63, 191, 0.3);
+  grid-area: 3 / 1 / 6 / 4;
+} */

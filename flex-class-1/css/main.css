@@ -1,0 +1,148 @@
+body {
+  background-color: whitesmoke;
+}
+
+.flexcontainer{
+  display: flex;
+}
+
+.flexcontainer-direction{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.flexcontainer-alignmentc{
+  display: flex;
+  justify-content: center;
+}
+
+.flexcontainer-alignmente{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flexitem1-aic {
+  padding: 20px;
+  margin: 20px;
+  background-color: white;
+}
+.flexitem2-aic {
+  padding: 20px;
+  margin: 20px;
+  background-color: white;
+}
+.flexcontainer-aic{
+  padding: 50px;
+  background-color: thistle;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flexitem1-aicr {
+  padding: 20px;
+  margin: 20px;
+  background-color: white;
+}
+.flexitem2-aicr {
+  padding: 20px;
+  margin: 20px;
+  background-color: white;
+}
+.flexcontainer-aicr {
+  padding: 50px;
+  background-color: lightseagreen;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+p.pink {
+  color: hotpink;
+}
+p.lightblue {
+  color: darkslateblue;
+}
+
+.product {
+  margin: 0;
+  padding: 32px;
+  font-family: sans-serif;
+}
+
+/* Skillcrush project https://learn.skillcrush.com/module-2/hard-aligning-content-with-flexbox/ */
+.product__wrapper {
+  /* Add flexbox properties for mobile here */
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+/* Add media query for product__wrapper here */
+@media (min-width: 640px) {
+  .product__wrapper {
+    flex-direction: row;
+    justify-content: center;
+    /* not in SK solution code */
+    align-items: center;
+  }
+}
+
+.product__info {
+  max-width: 350px;
+  padding: 40px 0;
+}
+
+.product__name {
+  font-size: 28px;
+  margin: 0;
+}
+
+.product__price {
+  text-transform: uppercase;
+  margin: 16px 0 0;
+}
+
+.product__description {
+  line-height: 1.5;
+  margin: 24px 0 0;
+}
+
+.product__link {
+  margin-top: 28px;
+  background-color: #00316d;
+  border-radius: 4px;
+  color: white;
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  line-height: 1;
+  padding: 16px 24px 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.product__link:hover {
+  background-color: #326fb0;
+}
+
+.product__image {
+  width: 100%;
+  max-width: 400px;
+}
+
+@media (min-width: 800px) {
+  .product__link {
+    width: auto;
+  }
+
+  .product__info {
+    padding: 40px;
+  }
+}
+/* End Skillcrush project */

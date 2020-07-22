@@ -1,0 +1,266 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Flexbox & Grid</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Fontawesome -->
+  <script src="https://kit.fontawesome.com/fe5a312db0.js"></script>
+
+  <!-- Goggle Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:500,700" rel="stylesheet">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  <div class="site-header">
+    <h1><a href="../index.html">Lisa's Coding Playground!</a></h1>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../navigation/index.html">Navigation to Other Sites</a></li>
+    </ul>
+  </div>
+  <article>
+    <h2>CSS grid container and items. Each box takes up calc(100 / 3) of screen</h2>
+    <div class="grid-container">
+      <section class="grid-item">
+        <div class="box-10 box-color-1">
+          <h3>Box 10</h3>
+          <p>Yada Yada Yada</p>
+        </div>
+      </section>
+      <section class="grid-item">
+        <div class="box-11 box-color-2">
+          <h3>Box 11</h3>
+          <p>Yada Yada Yada</p>
+        </div>
+      </section>
+      <section class="grid-item">
+        <div class="box-12 box-color-3">
+          <h3>Box 12</h3>
+          <p>Yada Yada Yada</p>
+        </div>
+      </section>
+    </div>
+  </article>
+
+  <article>
+    <h2>Different parent and child, same CSS. Each box takes full width but the content is contained in three columns
+      calc(100 / 3)</h2>
+    <div>
+      <section class="grid-container">
+        <div class="grid-box box-10 box-color-1">
+          <h3>Box 10</h3>
+          <p>Yada Yada Yada</p>
+          <p>Huh</p>
+        </div>
+      </section>
+      <section class="grid-container">
+        <div class="grid-box box-11 box-color-2">
+          <h3>Box 11</h3>
+          <p>Yada Yada Yada</p>
+          <p>Huh</p>
+        </div>
+      </section>
+      <section class="grid-container">
+        <div class="grid-box box-12 box-color-3">
+          <h3>Box 12</h3>
+          <p>Yada Yada Yada</p>
+          <p>Huh</p>
+        </div>
+      </section>
+    </div>
+  </article>
+
+  <h2>Skillcrush make it pretty & purple. Tablet is calc(100% / 3). Desktop is 20% 20%....</h2>
+  <div class="skpurple">
+    <ul class="sk-purple">
+      <!-- purple -->
+      <li class="purple">I</li>
+      <li class="purple">Love</li>
+      <li class="purple">Learning</li>
+      <li class="purple">From</li>
+      <li class="purple">Skillcrush</li>
+    </ul>
+  </div>
+
+  <h2>Skillcrush placing on the grid. Changing start/end changes the size of the blocks.</h2>
+  <div class="grid-place">
+    <header>Header</header>
+    <aside>Aside</aside>
+    <main>Main</main>
+    <footer>Footer</footer>
+  </div>
+
+
+  /* Positioning items in the grid */
+  <article class="background">
+    <h2>Positioning items in the grid different ways</h2>
+    <div class="grid-div-container">
+      <section class="grid-section">
+        <div class="grid-div-box box-13 box-color-1">
+          <h3>Box 10</h3>
+          <p>Yada Yada Yada</p>
+          <p>Huh</p>
+        </div>
+      </section>
+      <section class="grid-section">
+        <div class="grid-div-box box-14 box-color-2">
+          <h3>Box 11</h3>
+          <p>Yada Yada Yada</p>
+          <p>Huh</p>
+        </div>
+      </section>
+      <section class="grid-section">
+        <div class="grid-div-box box-15 box-color-3">
+          <h3>Box 12</h3>
+          <p>Yada Yada Yada</p>
+          <p>Huh</p>
+        </div>
+      </section>
+      <section class="grid-section">
+        <div class="grid-div-box box-16 box-color-1">
+          <h3>Box 13</h3>
+          <p>Yada Yada Yada</p>
+          <p>Huh</p>
+        </div>
+      </section>
+      <section class="grid-section">
+        <div class="grid-div-box box-17 box-color-2">
+          <h3>Box 14</h3>
+          <p>Yada Yada Yada</p>
+          <p>Huh</p>
+        </div>
+      </section>
+      <section class="grid-section">
+        <div class="grid-div-box box-18 box-color-3">
+          <h3>Box 15</h3>
+          <p>Yada Yada Yada</p>
+          <p>Huh</p>
+        </div>
+      </section>
+    </div>
+  </article>
+
+  <h2>align items & justify content</h2>
+  <div class="align-justify">
+    <header class="a-header">Header</header>
+    <aside class="a-aside">Aside</aside>
+    <main class="a-main">Main</main>
+    <footer class="a-footer">Footer</footer>
+  </div>
+
+  <article>
+    <h2></h2>
+    <div class="align-justify-2">
+      <section class="grid-container-10">
+        <div class="grid-just-10 box-10 box-color-1">
+          <h3>Box 10</h3>
+          <p>Yada Yada Yada</p>
+          <p>Huh</p>
+        </div>
+      </section>
+      <section class="grid-container-11">
+        <div class="grid-just-11 box-11 box-color-2">
+          <h3>Box 11</h3>
+          <p>Yada Yada Yada</p>
+          <p>Huh</p>
+        </div>
+      </section>
+      <section class="grid-container-12">
+        <div class="grid-just-12 box-12 box-color-3">
+          <h3>Box 12</h3>
+          <p>Yada Yada Yada</p>
+          <p>Huh</p>
+        </div>
+      </section>
+      <section class="grid-container-13">
+        <div class="grid-just-13 box-13 box-color-2">
+          <h3>Box 13</h3>
+          <p>Yada Yada Yada</p>
+          <p>Huh</p>
+        </div>
+      </section>
+      <section class="grid-container-14">
+        <div class="grid-just-14 box-14 box-color-3">
+          <h3>Box 14</h3>
+          <p>Yada Yada Yada</p>
+          <p>Huh</p>
+        </div>
+      </section>
+    </div>
+  </article>
+
+  <h2>An example from a SK video</h2>
+  <div class="grid">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+  </div>
+
+  <h2>An rif on the example from a SK video</h2>
+  <div class="grid-2">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+  </div>
+
+  <h2>Class assignment</h2>
+  <section class="intro">
+    <h2 class="intro__heading">
+      <span>Welcome to</span>
+      <span class="intro__heading__jumbo">Rainbow Land</span>
+    </h2>
+    <div class="intro__img">
+      <img src="images/photo.jpeg" alt="" />
+    </div>
+    <div class="intro__info">
+      <p class="intro__info__heading">
+        <strong>We're the Loveliest Village Around</strong>
+      </p>
+      <p class="intro__info__content">
+        We promise a rainbow every day! No, really! We also have a huge variety of wild animals - buffalo, deer,
+        chipmunks. And you get to drive around and look at them! You can also observe people doing things like getting
+        out of their car to talk to the buffalo - which will make you feel infinitely smarter than they are. And might
+        get you a viral video on Twitter!
+      </p>
+    </div>
+    <ul class="intro__social">
+      <li class="intro__social__item"><i class="fab fa-instagram"></i></li>
+      <li class="intro__social__item"><i class="fab fa-facebook"></i></li>
+      <li class="intro__social__item"><i class="fab fa-twitter"></i></li>
+    </ul>
+  </section>
+
+
+
+</body>
+
+</html>

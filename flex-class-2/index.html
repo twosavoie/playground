@@ -1,0 +1,251 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Flexbox & Grid</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Fontawesome -->
+  <script src="https://kit.fontawesome.com/fe5a312db0.js"></script>
+
+  <!-- Goggle Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:500,700" rel="stylesheet">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  <div class="site-header">
+    <h1><a href="../index.html">Lisa's Coding Playground!</a></h1>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../navigation/index.html">Navigation to Other Sites</a></li>
+    </ul>
+  </div>
+  <header class="header">
+    <div class="header-title">
+      <h1 class="site-header">Trial Flexbox</h1>
+      <p class="site-subhead">Positions & Responsive</p>
+    </div>
+    <div class="header-nav">
+      <nav>
+        <ul class="site-nav">
+          <li class="nav-item">Flexbox</li>
+          <li class="nav-item">Flex Grid</li>
+          <li class="nav-item">Other stuff</li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <article>
+      <h2>No rules, just backgrounds</h2>
+      <div>
+        <section>
+          <div class="box-1 box-color-1">
+            <h3>Box .1</h3>
+            <p>Yada Yada Yada</p>
+          </div>
+        </section>
+        <section>
+          <div class="box-2 box-color-2">
+            <h3>Box .2</h3>
+            <p>Yada Yada Yada</p>
+          </div>
+        </section>
+        <section>
+          <div class="box-3 box-color-3">
+            <h3>Box .3</h3>
+            <p>Yada Yada Yada</p>
+          </div>
+        </section>
+      </div>
+    </article>
+
+    <article>
+      <h2>Calc on container. width: calc(100% / 3), width stays at 1/3 of page responsive</h2>
+      <div class="calc-rules">
+        <section class="calc">
+          <div class="box-1 box-color-1">
+            <h3>Box 1</h3>
+            <p>Yada Yada Yada</p>
+          </div>
+        </section>
+        <section>
+          <div class="box-2 box-color-2">
+            <h3>Box 2</h3>
+            <p>Yada Yada Yada</p>
+          </div>
+        </section>
+        <section>
+          <div class="box-3 box-color-3">
+            <h3>Box 3</h3>
+            <p>Yada Yada Yada</p>
+          </div>
+        </section>
+      </div>
+    </article>
+
+    <article>
+      <h2>Phone: Flex-box, wrap & column-reverse. Desktop: nowrap & row. Width 100% for all</h2>
+      <div class="calc-rules-2">
+        <section class="calc-2">
+          <div class="box-1a box-color-1">
+            <h3>Box 1</h3>
+            <p>Yada Yada Yada</p>
+          </div>
+        </section>
+        <section class="calc-2">
+          <div class="box-2a box-color-2">
+            <h3>Box 2</h3>
+            <p>Yada Yada Yada</p>
+          </div>
+        </section>
+        <section class="calc-2">
+          <div class="box-3a box-color-3">
+            <h3>Box 3</h3>
+            <p>Yada Yada Yada</p>
+          </div>
+        </section>
+      </div>
+    </article>
+
+    <article>
+      <h2>Basic responsive with calc</h2>
+      <div class="calc-rules-5">
+        <!-- flex container -->
+        <section class="calc-5">
+          <!-- flex item -->
+          <div class="box-1d box-color-1">
+            <h3>Box 1</h3>
+            <p>Yada Yada Yada</p>
+          </div>
+        </section>
+        <section class="calc-5">
+          <div class="box-2d box-color-2">
+            <h3>Box 2</h3>
+            <p>Yada Yada Yada</p>
+          </div>
+        </section>
+        <section class="calc-5">
+          <div class="box-3d box-color-3">
+            <h3>Box 3</h3>
+            <p>Yada Yada Yada</p>
+          </div>
+        </section>
+      </div>
+    </article>
+
+    <article>
+      <h2>Calc with margins and negative margins.</h2>
+      <div class="calc-rules-3">
+        <section class="calc-3">
+          <div class="box-1b box-color-1">
+            <h3>Box 1</h3>
+            <p>Yada Yada Yada</p>
+          </div>
+        </section>
+        <section class="calc-3">
+          <div class="box-2b box-color-2">
+            <h3>Box 2</h3>
+            <p>Yada Yada Yada</p>
+          </div>
+        </section>
+        <section class="calc-3">
+          <div class="box-3b box-color-3">
+            <h3>Box 3</h3>
+            <p>Yada Yada Yada</p>
+          </div>
+        </section>
+      </div>
+    </article>
+
+    <article>
+      <h2>Phone: full width, destop 80/20 responsive</h2>
+      <div class="calc-rules-4">
+        <section class="calc-4a">
+          <div class="box-1c box-color-1">
+            <h3>Box 1</h3>
+            <p>Yada Yada Yada</p>
+          </div>
+        </section>
+        <section class="calc-4b">
+          <div class="box-2c box-color-2">
+            <h3>Box 2</h3>
+            <p>Yada Yada Yada</p>
+          </div>
+        </section>
+      </div>
+    </article>
+
+    <article>
+      <h2>Flex basis, grow & shrink</h2>
+      <p>The items are set to take up 600px. If the screen is 600px wide, all three boxes and even. If < 600px the first
+          two boxes are proportionally smaller. If> 600px, the first two boxes and proportionally bigger. Notice
+          box #5 is always the same size.</p>
+      <div class="flexbox-rules">
+        <section class="box-4c">
+          <div class="box-4i box-color-1">
+            <h3 class="top-4">flex grow of 1 for height, 3 width, 3 shrink width</h3>
+            <p class="bottom-4">box is 200px high, padding 24px</p>
+          </div>
+        </section>
+        <section class="box-5c">
+          <div class="box-5i box-color-2">
+            <h3 class="top-5">Box 5 flex: 1 1 200; no height</h3>
+            <p class="bottom-5">Yada Yada Yada</p>
+          </div>
+        </section>
+        <section class="box-6c">
+          <div class="box-6i box-color-3">
+            <h3 class="top-6">Box 6 flex: 4 4 200px; no height</h3>
+            <p class="bottom-6">Yada Yada Yada</p>
+          </div>
+        </section>
+      </div>
+    </article>
+
+    <article>
+      <h2>styling children like :first-child</h2>
+      <div class="flexbox-rules-2">
+        <section class="child-selector">
+          <div class="box-7 rule-2 box-color-1">
+            <h3>first-child</h3>
+            <p>Styled to be white and to be 100% until shrunk to 400px</p>
+          </div>
+        </section>
+        <section class="child-selector">
+          <div class="box-8 rule-2 box-color-2">
+            <h3>Box 8</h3>
+            <p>Yada Yada Yada</p>
+          </div>
+        </section>
+        <section class="child-selector">
+          <div class="box-9 rule-2 box-color-3">
+            <h3>Box 9</h3>
+            <p>Yada Yada Yada</p>
+          </div>
+        </section>
+      </div>
+    </article>
+  </main>
+</body>
+
+</html>

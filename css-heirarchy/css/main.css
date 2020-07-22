@@ -1,0 +1,30 @@
+/* !important will override everthing */
+.class {
+ color: pink !important;
+}
+
+/* inline styles */
+
+ #id.class {
+   color: aqua;
+ }
+
+ h1#id {
+  color: black;
+}
+
+ #id {
+  color: red;
+}
+
+ h1.class {
+  color: green;
+}
+
+ .class {
+  color: blue;
+}
+
+h1 {
+  color: purple;
+}

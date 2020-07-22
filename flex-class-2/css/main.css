@@ -1,0 +1,209 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Site header styles, side by side on desktop stacked on mobile */
+.header { /* flex container */
+  padding: 8px 32px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.header-title { /* needed here to create wrap on larger phones */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.site-subhead {
+  display: none; /* hide subtitle */
+  margin: 0 0 0 24px;
+}
+.site-nav { /* ul */
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+.nav-item { /* li */
+  margin: 0 10px;
+  display: inline;
+}
+@media (min-width: 640px) {
+/*  .header-title { added to the phone style instead - see above
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  } */
+}
+@media (min-width: 1024px) {
+  .header { /* allow inline style & space between header & nav */
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .header-title {
+    width: 50%; /* counter the phone width of 100% */
+    justify-content: flex-start; /* push to the left */
+  }
+  .site-subhead { /* show the subtitle */
+    display: flex;
+    align-items: center;
+  }
+}
+/* End Site Header */
+
+/* Box colors */
+.box-color-1 {
+  background-color: pink;
+}
+
+.box-color-2 {
+  background-color: lightblue;
+}
+
+.box-color-3 {
+  background-color: lightgrey;
+}
+/* End box colors */
+
+/* No rule has not styles set(?) */
+
+/* second section showing calc function */
+.calc-rules {
+  width: calc(100% / 3); /* calc placed on container div */
+}
+
+/* second-a section. making a responsive design */
+.calc-rules-2 {
+/*  width: calc(100% / 3); /* calc placed on container div */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+}
+.calc-2 {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .calc-rules-2 {
+    flex-wrap: nowrap; /* Takes away the wrap applied to < 1024px screens */
+    flex-direction: row;
+  }
+}
+
+/* second-d Basic responsive with calc*/
+.calc-5 { /* flex item */
+  width: 100%;
+}
+.calc-rules-5 {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (min-width: 640px) {
+  .calc-5 { /* flex item */
+    width: calc(50%);
+  }
+}
+@media (min-width: 1024px) {
+  .calc-5 { /* flex item */
+    width: calc(100% /3);
+  }
+}
+
+/* second-b section showing calc function with margins. */
+.calc-3 {
+  width: 100%;
+  margin: 0 10px 0;
+}
+.calc-rules-3 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -12px 0; /* To allow flex container to line up properly without the extra margin added to the flex items. */
+}
+@media (min-width: 640px) {
+  .calc-3 {
+    width: calc(50% - 20px);
+  }
+}
+@media (min-width: 1024px) {
+/*  .calc-rules-3 {
+    flex-wrap: nowrap; /* Takes away the wrap applied to < 1024px screens */
+/*    flex-direction: row;
+  } */
+  .calc-3 {
+    width: calc(100% / 3 - 20px);
+  }
+}
+
+/* second-c section showing calc function with margins. */
+.calc-rules-4 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.calc-4a {
+  width: 100%;
+}
+.calc-4b {
+  width: 100%
+}
+@media (min-width: 1024px) {
+  .calc-rules-4 {
+    flex-wrap: nowrap; /* Takes away the wrap applied to < 1024px screens */
+    flex-direction: row;
+  }
+  .calc-4a {
+    width: 800px;
+  }
+  .calc-4b {
+    width: calc(100% - 800px);
+  }
+}
+
+/* third section */
+
+  .flexbox-rules {
+    display: flex;
+    width: 100%;
+  }
+  .box-4c {
+    flex-basis: 200px;
+    flex-grow: 6;
+    flex-shrink: 6;
+  }
+  .box-5c {
+    flex: 1 1 200px; /* Grow Shrink Basis */
+  }
+  .box-6c {
+    flex-basis: 200px;
+    flex-grow: 4;
+    flex-shrink: 4;
+  }
+  .box-4i {
+    height: 200px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+  }
+  .top-4 { /* Seperates the top-4 from the bottom-4 */
+    margin: 0;
+    flex: 1; /* is flex grow because it occupies the first position */
+  }
+  .bottom-4 {
+    margin: 0;
+  }
+
+/* fourth section */
+.flexbox-rules-2 { /* parent */
+  display: flex;
+  flex-wrap: wrap;
+  margin: -24px -12px 0; /* allow section to fall correctly under previous sections while having margins with the section */
+}
+.child-selector { /* child */
+  flex: 1 1 400px; /* makes responsive - they all grow at the same amount */
+  margin: 24px 12px 0;
+/*  width: 100%; */
+}
+.child-selector:first-child {
+  flex: 1 0 calc(100% - 24px);
+  color: white;
+}
+/* also selectors last-child, nchild(n), ~ for h3 ~ ul style all uls that are children of h3s, > for ul > li style lis of uls but not the sublist one child down from lis, and * for all elements */
