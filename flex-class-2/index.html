@@ -198,7 +198,7 @@
     <article>
       <h2>Flex basis, grow & shrink</h2>
       <p>The items are set to take up 600px. If the screen is 600px wide, all three boxes and even. If < 600px the first
-          two boxes are proportionally smaller. If> 600px, the first two boxes and proportionally bigger. Notice
+          two boxes are proportionally smaller. If> 600px, the first two boxes are proportionally bigger. Notice
           box #5 is always the same size.</p>
       <div class="flexbox-rules">
         <section class="box-4c">
@@ -245,6 +245,38 @@
         </section>
       </div>
     </article>
+
+    <article>
+      <h2>flexbasis 50% vs width 50% vs 600px (which is 50% of the full-width)</h2>
+      <div class="flexbox-rules-3">
+        <section class="flexbasis-50">
+          <div class="box-10 rule-2 box-color-1">
+            <h3>Box 10</h3>
+            <p>fb: 50%</p>
+          </div>
+        </section>
+        <section class="static-1">
+          <div class="box-11 rule-2 box-color-2">
+            <h3>Box 11</h3>
+            <p>width: 300px</p>
+          </div>
+        </section>
+        <section class="width-50">
+          <div class="box-12 rule-2 box-color-3">
+            <h3>Box 12</h3>
+            <p>w: 50%</p>
+          </div>
+        </section>
+        <section class="static-1">
+          <div class="box-12 rule-2 box-color-1">
+            <h3>Box 12</h3>
+            <p>width: 300px</p>
+          </div>
+        </section>
+      </div>
+    </article>
+
+
   </main>
 </body>
 

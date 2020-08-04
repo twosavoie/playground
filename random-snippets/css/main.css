@@ -2,6 +2,24 @@
     background-color: pink;
     padding: 20px 0;
 }
+.create-space {
+    padding: 50px;
+}
 p.pink::selection {
     background: pink;
-  }
+}
+.google-font {
+    font-family: 'Sacramento', sans-serif;
+}
+.luckiest-guy {
+    font-family: 'Luckiest Guy', cursive;
+}
+
+/**** link to a PDF doc adds the pdf icon before the link. $= operator targets the end of the attribute value looking for pdfs and adding the icon ******/
+/****** could be used to style internal links differently that outbound... I don't really understand *********/
+/**** the url goes to the pdf icon (I think) *****/
+.pdf-link a[href$=".pdf"] {
+    background: url('https://i.imgur.com/n8EHrrI.png')
+    0 50% no-repeat;
+    padding-left: 20px;
+}

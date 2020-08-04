@@ -207,3 +207,17 @@
   color: white;
 }
 /* also selectors last-child, nchild(n), ~ for h3 ~ ul style all uls that are children of h3s, > for ul > li style lis of uls but not the sublist one child down from lis, and * for all elements */
+
+/* fifth section */
+.flexbox-rules-3 {
+  display: flex; 
+}
+.flexbasis-50 {
+  flex-basis: 50%;
+}
+.width-50 {
+  width: 50%;
+}
+.static-1 {
+  width: 600px;
+}
