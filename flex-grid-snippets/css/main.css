@@ -17,3 +17,75 @@
     width: 200px;
     height: auto;  
 }
+
+/***** Center both horizontally and vertically with margin: auto; ********/
+.margin-auto .parent {
+    background-color: teal;
+    display: flex;
+    padding: 100px;
+}
+.margin-auto .child {
+    background-color: tomato;
+    margin: auto;
+    padding: 50px;
+}
+
+/***** Center vertically with margin: auto; ********/
+.vert-margin-auto .parent {
+    background-color: teal;
+    display: flex;
+    padding: 100px;
+    padding-left: 0;
+}
+.vert-margin-auto .child {
+    background-color: tomato;
+    margin: auto 0;
+    padding: 50px;
+}
+
+/********** layer text over a background - this is just like over an image, right? *********/
+/***** styles for all three *****/
+.parent-logo {
+    display: flex;
+    justify-content: space-around;
+}
+#layered-logo {
+    width: 300px;
+}
+/***** Flexbox & Grid version ******/
+.child-logo {
+    width: 300px;
+    height: 400px;
+    background: url('../img/layered-logo.png');
+    background-size: cover;
+    background-position: center;
+}
+/* Flexbox version */
+.background-logo h1,
+.background-logo p {
+    text-align: center;
+}  
+.background-logo h1 { /**** probably not necessary irl *****/
+    padding-top: 50px;
+}
+.background-logo p {
+    width: 55%;
+}
+.background-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+button {
+    padding: 10px 30px;
+}
+
+/******* Grid version *****/
+
+
+
+/********* bottom spacer ********/
+.spacer {
+    height: 100px;
+}

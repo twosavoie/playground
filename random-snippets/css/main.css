@@ -5,6 +5,12 @@
 .create-space {
     padding: 50px;
 }
+.centering-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/***** Turn text pink when highlighted ******/
 p.pink::selection {
     background: pink;
 }
@@ -22,4 +28,116 @@ p.pink::selection {
     background: url('https://i.imgur.com/n8EHrrI.png')
     0 50% no-repeat;
     padding-left: 20px;
+}
+.download-image img {
+    height: 300px;
+    width: 300px;
+}
+.download-image a {
+    font-size: 50px;
+}
+
+/******** remove the extra space added by the font and ?default browser for consistent spacing between elements *********/
+/********* not a current property - new **********/
+.leading-trim h2 {
+    text-edge: cap alphabetic;
+    leading-trim: both;
+}
+
+/* this is something to do with accessible buttons: codyhouse.co/blog/post/ Custom accessible radio/checkbox buttons with perfect alignment */
+/* hide native buttons */
+.radio, .chekbox {
+    position: absolute;
+    margin: 0 !important;
+    padding: 0 !important;
+    opacity: 0;
+    height: 0;
+    width: 0;
+    pointer-events: none;
+}
+/* label */
+.radio + label, .checkbox + label {
+    user-select: none;
+    cursor: pointer;
+    line-height: 1.4;
+}
+/* custom buttons - basic style */
+.radio + label::before, .checkbox + label::before {
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-color: var(--color-bg);
+    border: 2px solid var(--color-contrast-low);
+    margin-right: var(--space-xxxs);
+    transition: .2s;
+}
+/* radio only style */
+.radio + label::before {
+    border-radius: 50%;
+}
+/* checkbox only style */
+.checkbox + label::before {
+    border-radius: 4px;
+}
+:root {
+    /* radios and checkboxes */
+    --checkbox-radio-size: 18px;
+    --checkbox-radio-gap: var(--space-xxxs); /* button/label gap */
+    --chekbox-radio-border-width: 2px;
+    --checkbox-radio-line-height: 1.4;
+/* radio buttons */
+--radio-marker-size: 8px;
+/* checkboxes */
+--checkbox-marker-size: 12px;
+--checkbox-radius: 4px;
+}
+/* replace fixed values with variables - example */
+.checkbox + label::before {
+    border-radius: var(--checkbox-radius);
+}
+/* :checked */
+.radio:checked + label::before,
+.checkbox:checked + label::before {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+/* radio button :checked */
+.radio:checked + label::before {
+    background-image: url("");
+    background-size: var(--radio-marker-size);
+}
+.checkbox:checked + label::before {
+    background-image: url("");
+    background-size: var(--checkbox-marker-size);
+}
+:root {
+    /* ... */
+    --checkbox-radio-gap: var(--space-xxxs);
+    --checkbox-radio-line-height: var(--body-line-height);
+}
+/* label */
+.radio + label,
+.checkbox + label {
+    display: inline-flex;
+    align-items: flext-start; /* align button and label totop */
+    line-height: var(--checkbox-radio-line-height);
+    /* ... */
+}
+/* custom buttons - basic style */
+.radio + label::before,
+.checkbox + label::before {
+    flex-shrink: 0; /* prevent the button from shrinking */
+    margin-right: var(--checkbox-radio-gap); /* gap */
+    /* ... */
+}
+.radio + label::before,
+.checkbox + label::before {
+    /* ... */
+    position: relative;
+    top: calc((1em * var(--checkbox-radio-line-height) - var(--checkbox-radio-size)) /2);
+}
+/* focus effect */
+.checkbox:focus + label::before {
+    /* ???? */
 }
